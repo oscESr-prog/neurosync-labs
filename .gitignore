@@ -1,0 +1,13 @@
+# Logs y temporales
+*.log
+npm-debug.log*
+
+# Dependencias
+node_modules/
+
+# Archivos comprimidos de exportación
+neurosync-labs.zip
+
+# Datos de base de datos local
+pg_data/
+*.pid

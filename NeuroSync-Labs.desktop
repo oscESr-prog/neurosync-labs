@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=NeuroSync Labs
+Comment=Plataforma de Biofeedback Neuronal e Inteligencia Artificial
+Exec=bash -c "/home/estradaoscar419/.gemini/antigravity/scratch/neurosync-labs/iniciar.sh"
+Icon=/home/estradaoscar419/.gemini/antigravity/scratch/neurosync-labs/icons/icon-512x512.png
+Terminal=false
+Categories=Education;Development;Science;
+StartupNotify=true

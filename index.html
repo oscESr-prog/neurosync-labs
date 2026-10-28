@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NeuroSync Labs - Plataforma pionera impulsada por IA para optimización cognitiva, neurofeedback y sincronización neuronal en tiempo real.">
+  <title>NeuroSync Labs | Sincroniza tu mente, optimiza tu futuro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- FAVICON E IDENTIDAD DE MARCA -->
+  <link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+
+  <!-- VINCULACIÓN DEL WEB APP MANIFEST (PWA) -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0B0F19">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Compatibilidad con iOS / Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="NeuroSync">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+</head>
+<body>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <div class="brand">
+        <a href="#inicio" class="logo-link" aria-label="NeuroSync Labs Inicio">
+          <svg class="brand-logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="24" cy="24" r="21" stroke="#00F0FF" stroke-width="2" stroke-dasharray="4 2"/>
+            <path d="M24 10V38" stroke="#00F0FF" stroke-width="2" stroke-linecap="round"/>
+            <path d="M14 18C14 18 19 14 24 14C29 14 34 18 34 18" stroke="#00F0FF" stroke-width="2" stroke-linecap="round"/>
+            <path d="M10 24C10 24 17 20 24 20C31 20 38 24 38 24" stroke="#F3F4F6" stroke-width="2" stroke-linecap="round"/>
+            <path d="M14 30C14 30 19 34 24 34C29 34 34 30 34 30" stroke="#00F0FF" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="24" cy="24" r="4" fill="#00F0FF"/>
+            <circle cx="16" cy="21" r="2" fill="#F3F4F6"/>
+            <circle cx="32" cy="21" r="2" fill="#F3F4F6"/>
+            <circle cx="19" cy="31" r="2" fill="#00F0FF"/>
+            <circle cx="29" cy="31" r="2" fill="#00F0FF"/>
+          </svg>
+          <div class="brand-text">
+            <span class="company-name">NeuroSync Labs</span>
+            <span class="company-slogan">Sincroniza tu mente, optimiza tu futuro</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Botón móvil para menú -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+
+      <!-- Menú de navegación principal -->
+      <nav class="nav" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li class="nav-item"><a href="#innovacion" class="nav-link">Innovación</a></li>
+          <li class="nav-item"><a href="#galeria" class="nav-link">Galería</a></li>
+          <li class="nav-item"><a href="#proyecto" class="nav-link">Proyecto Core</a></li>
+          <li class="nav-item"><a href="#cache-api" class="nav-link">API Caché</a></li>
+          <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <div class="nav-action">
+          <button id="btn-install-pwa" class="btn btn-sm btn-install" aria-label="Instalar App">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 5px;">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Instalar App</span>
+          </button>
+          <a href="#contacto" class="btn btn-sm">Acceso Beta</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main id="main-content">
+
+    <!-- HOME / HERO -->
+    <section class="section hero" id="inicio">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>Startup Tecnológica en Biofeedback Neuronal</span>
+          </div>
+          <h1 class="hero-title">
+            Inteligencia Artificial para potenciar el <span class="text-accent">Rendimiento Cognitivo</span>
+          </h1>
+          <p class="hero-description">
+            NeuroSync Labs es una iniciativa de base tecnológica que combina interfaces cerebro-computadora (BCI) no invasivas con modelos predictivos de aprendizaje profundo. Maximizamos el enfoque profundo, prevenimos la fatiga mental y aceleramos la asimilación del conocimiento.
+          </p>
+          <div class="hero-actions">
+            <a href="#innovacion" class="btn btn-primary">Descubrir Tecnología</a>
+            <a href="#proyecto" class="btn btn-outline">Hoja de Ruta Proyecto</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">+42%</span>
+              <span class="stat-label">Velocidad de Enfoque</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">&lt; 15ms</span>
+              <span class="stat-label">Latencia de Inferencia</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">99.4%</span>
+              <span class="stat-label">Precisión Biométrica</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="video-card">
+            <div class="video-header">
+              <div class="video-dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <span class="video-tag">Demo Tecnológica • BCI &amp; Deep Learning</span>
+            </div>
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/7Pq-S557XQU?rel=0&amp;modestbranding=1"
+                title="NeuroSync Labs Tech Showcase"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-footer">
+              <p>Mapeo de oscilaciones beta y gamma procesadas en tiempo real mediante algoritmos generativos adaptativos.</p>
+            </div>
+
+            <!-- SIMULADOR Y TELEMETRÍA BIOMÉTRICA EN TIEMPO REAL -->
+            <div class="telemetry-live-panel">
+              <div class="telemetry-bar">
+                <span class="telemetry-pulse"></span>
+                <span class="telemetry-channel">STREAM BCI EN TIEMPO REAL • ONDAS GAMMA/BETA</span>
+                <span class="telemetry-latency">Latencia: <strong id="hud-latency">&lt; 12ms</strong></span>
+              </div>
+              <canvas id="bci-oscilloscope" width="560" height="85" class="oscilloscope-canvas"></canvas>
+              <div class="telemetry-metrics-hud">
+                <div class="hud-item">
+                  <span class="hud-label">Banda Gamma</span>
+                  <span class="hud-val text-accent" id="hud-gamma">40.8 Hz</span>
+                </div>
+                <div class="hud-item">
+                  <span class="hud-label">Banda Beta</span>
+                  <span class="hud-val" id="hud-beta">18.4 Hz</span>
+                </div>
+                <div class="hud-item">
+                  <span class="hud-label">Índice Enfoque</span>
+                  <span class="hud-val text-accent" id="hud-focus">91.6%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE INNOVACIÓN Y EMPRENDIMIENTO -->
+    <section class="section innovation" id="innovacion">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Pilares de Innovación</span>
+          <h2 class="section-title">Ciencia de vanguardia aplicada al emprendimiento</h2>
+          <p class="section-desc">
+            Diseñamos soluciones patentables de alto impacto comercial, creadas para resolver la epidemia silenciosa del agotamiento cognitivo en sectores de alto rendimiento.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Tarjeta 1 -->
+          <article class="tech-card">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-svg">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Algoritmos Adaptativos</h3>
+            <p class="card-text">
+              Nuestras redes neuronales recurrentes modulan en milisegundos los estímulos de neuroestimulación sonora y visual, adaptándose a las firmas biométricas particulares de cada usuario.
+            </p>
+            <ul class="card-features">
+              <li>Aprendizaje por refuerzo continuo</li>
+              <li>Ajuste dinámico de umbrales cognitivos</li>
+              <li>Reducción activa de artefactos musculares</li>
+            </ul>
+          </article>
+
+          <!-- Tarjeta 2 -->
+          <article class="tech-card card-featured">
+            <div class="card-badge">Tecnología Clave</div>
+            <div class="card-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-svg">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Biofeedback No Invasivo</h3>
+            <p class="card-text">
+              Captura precisa de electroencefalografía (EEG) de grado médico mediante sensores ultraligeros de grafeno que no requieren geles conductores ni calibraciones engorrosas.
+            </p>
+            <ul class="card-features">
+              <li>Sensores secos de impedancia ultra baja</li>
+              <li>Monitoreo ergonómico continuo 24/7</li>
+              <li>Cero invasividad física o electromagnética</li>
+            </ul>
+          </article>
+
+          <!-- Tarjeta 3 -->
+          <article class="tech-card">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-svg">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                <line x1="6" y1="6" x2="6.01" y2="6"/>
+                <line x1="6" y1="18" x2="6.01" y2="18"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Escalabilidad Cloud</h3>
+            <p class="card-text">
+              Arquitectura de microservicios distribuida con computación en el borde (Edge Computing) que permite sincronizar sesiones en equipo y generar telemetría para corporativos.
+            </p>
+            <ul class="card-features">
+              <li>Encriptación cuántico-resistente de extremo a extremo</li>
+              <li>Pipeline distribuido para macroanálisis</li>
+              <li>API RESTful y WebSockets para terceros</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARRUSEL INTERACTIVO DE INNOVACIÓN -->
+    <section class="section gallery" id="galeria">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Visualización y Prototipos</span>
+          <h2 class="section-title">Galería de Innovación y Pruebas de Concepto</h2>
+          <p class="section-desc">
+            Explora las etapas de desarrollo de hardware, interfaces cerebro-computadora y visualizaciones analíticas desarrolladas en NeuroSync Labs.
+          </p>
+        </div>
+
+        <div class="carousel-container" aria-roledescription="carousel" aria-label="Galería de Innovación Tecnológica">
+          <div class="carousel-track-wrapper">
+            <div class="carousel-track" id="carousel-track">
+              
+              <!-- Slide 1 -->
+              <div class="carousel-slide active" role="group" aria-roledescription="slide" aria-label="1 de 4">
+                <div class="slide-image-container">
+                  <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=1200&q=80" alt="Mapeo de conectoma y sinapsis neuronales generadas por computación cuántica" class="slide-img" loading="lazy">
+                  <div class="slide-overlay">
+                    <span class="slide-tag">Arquitectura Neuronal</span>
+                    <h3 class="slide-title">Mapeo del Conectoma en Tiempo Real</h3>
+                    <p class="slide-text">Modelado de sinapsis cognitivas durante sesiones de deep-work asistidas por IA generativa.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 de 4">
+                <div class="slide-image-container">
+                  <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=1200&q=80" alt="Investigación médica y neurociencia computacional en laboratorio" class="slide-img" loading="lazy">
+                  <div class="slide-overlay">
+                    <span class="slide-tag">Hardware BCI</span>
+                    <h3 class="slide-title">Sensores de Grafeno de Calibración Automática</h3>
+                    <p class="slide-text">Prototipo v2 del periférico de captura biopotencial con microprocesador integrado en banda cefálica.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="3 de 4">
+                <div class="slide-image-container">
+                  <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" alt="Microcontroladores de alto rendimiento y arquitectura BCI" class="slide-img" loading="lazy">
+                  <div class="slide-overlay">
+                    <span class="slide-tag">Computación en Borde</span>
+                    <h3 class="slide-title">Unidad de Procesamiento Neuronal (NPU)</h3>
+                    <p class="slide-text">Módulo de inferencia ultrarrápido que analiza ondas cerebrales alfa y theta sin depender de la nube.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="4 de 4">
+                <div class="slide-image-container">
+                  <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80" alt="Flujo de datos biométricos y analítica predictiva en pantalla" class="slide-img" loading="lazy">
+                  <div class="slide-overlay">
+                    <span class="slide-tag">Biofeedback Engine</span>
+                    <h3 class="slide-title">Telemetría y Métricas de Enfoque Continuo</h3>
+                    <p class="slide-text">Algoritmos de retroalimentación binaural automatizada para reprogramar el ritmo circadiano de trabajo.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Controles de navegación del carrusel -->
+          <button class="carousel-btn prev-btn" id="carousel-prev" aria-label="Ver diapositiva anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="carousel-btn next-btn" id="carousel-next" aria-label="Ver siguiente diapositiva">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+
+          <!-- Indicadores de puntos -->
+          <div class="carousel-indicators" id="carousel-dots" role="tablist" aria-label="Seleccionar diapositiva">
+            <button class="carousel-dot active" data-index="0" role="tab" aria-selected="true" aria-label="Diapositiva 1"></button>
+            <button class="carousel-dot" data-index="1" role="tab" aria-selected="false" aria-label="Diapositiva 2"></button>
+            <button class="carousel-dot" data-index="2" role="tab" aria-selected="false" aria-label="Diapositiva 3"></button>
+            <button class="carousel-dot" data-index="3" role="tab" aria-selected="false" aria-label="Diapositiva 4"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELACIÓN CON EL PROYECTO FINAL (PRODUCTO 1 -> PRODUCTO 2) -->
+    <section class="section project-core" id="proyecto">
+      <div class="container">
+        <div class="project-box">
+          <div class="project-header">
+            <span class="section-subtitle">Marco Académico y Hoja de Ruta</span>
+            <h2 class="section-title">De la Propuesta MVP al Ecosistema SaaS Integral</h2>
+            <p class="project-summary">
+              Esta plataforma representa el <strong>Producto 1</strong>: la base de validación comercial, identidad visual y arquitectura frontend preliminar. Constituye el pilar fundamental que se articulará directamente con el <strong>Producto 2 Final</strong> que desarrollaremos colaborativamente en equipo.
+            </p>
+          </div>
+
+          <div class="phases-grid">
+            <div class="phase-card current">
+              <div class="phase-status">Producto 1 • Estado Actual</div>
+              <h3 class="phase-title">Identidad, Landing &amp; Validación de Mercado</h3>
+              <p class="phase-text">
+                Construcción de la presencia digital de NeuroSync Labs mediante arquitectura semántica, directrices de diseño corporativo y estructuración de la propuesta de valor tecnológico.
+              </p>
+              <ul class="phase-checklist">
+                <li>Diseño UI/UX responsivo con paleta biométrica de alto contraste</li>
+                <li>Canalización de tracción de usuarios e interés de beta testers</li>
+                <li>Consolidación del mapa de requerimientos del sistema final</li>
+              </ul>
+            </div>
+
+            <div class="phase-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+
+            <div class="phase-card future">
+              <div class="phase-status">Producto 2 • Entrega Final en Equipo</div>
+              <h3 class="phase-title">Sistema Web Integral &amp; Plataforma SaaS</h3>
+              <p class="phase-text">
+                Implementación de la infraestructura completa full-stack: dashboard analítico en tiempo real, gestión multi-inquilino de usuarios y procesamiento biométrico distribuido.
+              </p>
+              <ul class="phase-checklist">
+                <li>Panel interactivo con gráficos de ondas EEG vía WebSockets</li>
+                <li>Módulo de autenticación segura, roles y suscripciones cloud</li>
+                <li>Conectividad API con diademas BCI comerciales y sintéticas</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-footer-note">
+            <p>
+              <strong>Integración Técnica:</strong> Los componentes y patrones estilísticos de esta landing page migrarán como módulos reutilizables hacia el front-end del aplicativo principal en la siguiente fase de desarrollo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN INTERACTIVA: MÉTODOS DE LA API CACHÉ -->
+    <section class="section cache-section" id="cache-api">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Arquitectura Offline &amp; Service Worker</span>
+          <h2 class="section-title">Laboratorio de Métodos de la API Caché</h2>
+          <p class="section-desc">
+            Demostración interactiva y en tiempo real de los métodos fundamentales de la API de Almacenamiento en Caché del W3C (<code>CacheStorage</code> y <code>Cache</code>) integrados en NeuroSync Labs.
+          </p>
+        </div>
+
+        <div class="cache-dashboard">
+          <!-- Monitor de Estado y Telemetría -->
+          <div class="cache-status-card">
+            <div class="status-header">
+              <span class="status-title">Monitor de Telemetría Caché</span>
+              <span class="network-badge" id="network-badge">
+                <span class="status-indicator"></span>
+                <span id="network-status-text">Detectando...</span>
+              </span>
+            </div>
+            <div class="status-grid">
+              <div class="status-col">
+                <span class="status-label">Caché Activo (caches.has)</span>
+                <span class="status-val text-accent" id="active-cache-name">neurosync-cache-v1</span>
+              </div>
+              <div class="status-col">
+                <span class="status-label">Entradas Almacenadas (cache.keys)</span>
+                <span class="status-val" id="cached-count">Consultando...</span>
+              </div>
+              <div class="status-col">
+                <span class="status-label">Service Worker</span>
+                <span class="status-val text-accent" id="sw-status">Activo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Matriz de Métodos de la Cache API -->
+          <div class="cache-methods-grid">
+            <!-- Método 1: caches.open + cache.keys -->
+            <div class="method-card">
+              <div class="method-tag">Lectura e Inspección</div>
+              <h3 class="method-name"><code>cache.keys()</code></h3>
+              <p class="method-desc">Lista todas las peticiones (Requests) guardadas en el almacén de caché actual.</p>
+              <button class="btn btn-sm btn-block" id="btn-cache-keys">Listar Recursos</button>
+            </div>
+
+            <!-- Método 2: cache.match -->
+            <div class="method-card">
+              <div class="method-tag">Búsqueda</div>
+              <h3 class="method-name"><code>cache.match()</code></h3>
+              <p class="method-desc">Verifica si un recurso crítico (<code>styles.css</code>) existe en la memoria caché sin ir a internet.</p>
+              <button class="btn btn-sm btn-block" id="btn-cache-match">Probar Match</button>
+            </div>
+
+            <!-- Método 3: cache.add -->
+            <div class="method-card">
+              <div class="method-tag">Descarga y Almacenamiento</div>
+              <h3 class="method-name"><code>cache.add()</code></h3>
+              <p class="method-desc">Descarga por red y guarda atómicamente un nuevo recurso en la caché.</p>
+              <button class="btn btn-sm btn-block" id="btn-cache-add">Ejecutar cache.add</button>
+            </div>
+
+            <!-- Método 4: cache.put -->
+            <div class="method-card">
+              <div class="method-tag">Inyección Manual</div>
+              <h3 class="method-name"><code>cache.put()</code></h3>
+              <p class="method-desc">Crea y almacena un par Request/Response personalizado (por ejemplo, telemetría sintética offline).</p>
+              <button class="btn btn-sm btn-block" id="btn-cache-put">Inyectar con cache.put</button>
+            </div>
+
+            <!-- Método 5: cache.delete -->
+            <div class="method-card">
+              <div class="method-tag">Eliminación Específica</div>
+              <h3 class="method-name"><code>cache.delete()</code></h3>
+              <p class="method-desc">Elimina una sola entrada del caché manteniendo los demás recursos intactos.</p>
+              <button class="btn btn-sm btn-block" id="btn-cache-delete">Eliminar Recurso</button>
+            </div>
+
+            <!-- Método 6: caches.delete + cache.addAll -->
+            <div class="method-card">
+              <div class="method-tag">Gestión Global</div>
+              <h3 class="method-name"><code>caches.delete()</code></h3>
+              <p class="method-desc">Purga el almacén de caché completo para probar la regeneración atómica.</p>
+              <div class="method-dual-btns">
+                <button class="btn btn-sm btn-outline" id="btn-cache-purge">Purgar Todo</button>
+                <button class="btn btn-sm btn-primary" id="btn-cache-restore">Restaurar Todo</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Consola / Terminal de Salida en Vivo -->
+          <div class="cache-terminal">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <span class="terminal-title">Consola de Métodos Cache API • Registro en Tiempo Real</span>
+              <button class="terminal-clear" id="btn-clear-console">Limpiar Consola</button>
+            </div>
+            <pre class="terminal-body" id="cache-terminal-body"><code id="cache-log-code">// Consola de ejecución de la API Caché lista.
+// Selecciona cualquier método arriba para ver su ejecución y respuesta de Promesa.</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE CONTACTO Y ACCESO BETA -->
+    <section class="section contact" id="contacto">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-info">
+            <span class="section-subtitle">Conexión con el Laboratorio</span>
+            <h2 class="contact-title">¿Listo para sincronizar tus capacidades cognitivas?</h2>
+            <p class="contact-desc">
+              Buscamos investigadores, desarrolladores y profesionales de alto rendimiento para participar en las primeras pruebas de campo de NeuroSync Labs.
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <span class="contact-label">Sede de Innovación:</span>
+                <span class="contact-value">Distrito de Ciencia y Tecnología #404</span>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Correo Oficial:</span>
+                <span class="contact-value">investigacion@neurosynclabs.tech</span>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Fase del Proyecto:</span>
+                <span class="contact-value text-accent">Fase 1 (Landing Page MVP)</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="form-name" class="form-label">Nombre Completo</label>
+              <input type="text" id="form-name" class="form-input" placeholder="Ej. Dra. Elena Morales" required>
+            </div>
+            <div class="form-group">
+              <label for="form-email" class="form-label">Correo Institucional o Profesional</label>
+              <input type="email" id="form-email" class="form-input" placeholder="elena@universidad.edu" required>
+            </div>
+            <div class="form-group">
+              <label for="form-interest" class="form-label">Área de Interés</label>
+              <select id="form-interest" class="form-input">
+                <option value="beta">Acceso Anticipado a Beta Privada</option>
+                <option value="research">Alianza de Investigación Académica</option>
+                <option value="dev">Desarrollo sobre API NeuroSync</option>
+                <option value="investment">Inversión y Capital Semilla</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="form-message" class="form-label">Mensaje o Comentarios</label>
+              <textarea id="form-message" class="form-input form-textarea" rows="3" placeholder="Describe tu interés en el proyecto o caso de uso..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Enviar Solicitud de Registro</button>
+            <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-text">
+            <span class="company-name">NeuroSync Labs</span>
+            <span class="company-slogan">Sincroniza tu mente, optimiza tu futuro</span>
+          </div>
+          <p class="footer-mission">
+            Pioneros en neurotecnología accesible para democratizar el máximo potencial intelectual de la humanidad mediante inteligencia artificial ética.
+          </p>
+        </div>
+
+        <div class="footer-nav-group">
+          <h4 class="footer-heading">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#innovacion">Innovación</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#proyecto">Proyecto Core</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-group">
+          <h4 class="footer-heading">Ecosistema</h4>
+          <ul class="footer-links">
+            <li><a href="#proyecto">Documento Producto 1</a></li>
+            <li><a href="#proyecto">Especificaciones Producto 2</a></li>
+            <li><a href="#contacto">Programa de Investigadores</a></li>
+            <li><a href="#contacto">API &amp; SDK Docs (Próximamente)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-group">
+          <h4 class="footer-heading">Desarrollo</h4>
+          <div class="badge-status">
+            <span class="status-indicator"></span>
+            <span>Fase 1: Landing Page MVP</span>
+          </div>
+          <p class="footer-repo-text">
+            Repositorio y entregable académico listo para integración con el backend central del equipo.
+          </p>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="repo-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="repo-icon">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            <span>Ver Repositorio Git</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2026 NeuroSync Labs. Todos los derechos reservados. Proyecto Académico de Innovación y Emprendimiento.
+        </p>
+        <div class="footer-tagline">
+          <span>Diseñado bajo la regla estricta de 3 colores con arquitectura responsiva.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL DE INSTALACIÓN PWA -->
+  <div class="install-modal" id="install-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" style="display: none;">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="modal-title" class="modal-heading">Instalar NeuroSync Labs</h3>
+        <button class="modal-close" id="modal-close" aria-label="Cerrar modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-text">Para ejecutar NeuroSync Labs como aplicación nativa e independiente en tu equipo:</p>
+        <div class="browser-guide">
+          <div class="guide-item">
+            <strong>🌐 En Chrome, Edge o Brave:</strong>
+            <span>Haz clic en el icono de instalación en la barra de direcciones de URL para instalarla con 1 clic.</span>
+          </div>
+          <div class="guide-item">
+            <strong>🦊 En Firefox / Linux:</strong>
+            <span>Firefox en escritorio no tiene soporte de PWA nativo en su menú. Puedes iniciarla con 1 clic usando el acceso directo <code>NeuroSync-Labs.desktop</code> o el comando <code>./iniciar.sh</code> en tu carpeta del proyecto.</span>
+          </div>
+          <div class="guide-item">
+            <strong>📱 En Teléfonos Móviles (Android):</strong>
+            <span>Toca el menú de 3 puntos y selecciona <em>"Añadir a la pantalla de inicio"</em> o <em>"Instalar aplicación"</em>.</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary btn-sm" id="modal-ok">Entendido</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
